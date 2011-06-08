@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE  Klasse [
+    <!ELEMENT suggestions (suggestion*)>
+    <!ELEMENT suggestion (name)>
+]>
+<suggestions>
+	<suggestion>Ant</suggestion>
+	<suggestion>Answer</suggestion>
+	<suggestion>America</suggestion>
+	<suggestion>Anecdote</suggestion>
+	<suggestion>Antarctic</suggestion>
+	<suggestion>Antisemitism</suggestion>
+	<suggestion>Antelope</suggestion>
+	<suggestion>Antichrists</suggestion>
+	<suggestion>Antilles</suggestion>
+<suggestions>
