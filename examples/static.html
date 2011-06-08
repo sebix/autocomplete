@@ -26,9 +26,23 @@
 </head>
 <body>
 <script src="../autocomplete.js" type="text/javascript"></script>
-<script type="text/javascript">var url = 'static.xml\/\/'; /* Browser/Server ignores phrase  */</script>
+<script type="text/javascript">
+var url = 'static.xml';
+function sndReqPhrase(inputID, outputID) {
+	var phrase = document.getElementById(inputID).value;
+
+	if (phrase.length >= 2) {
+		xmlhttp = createRequestObject();
+		xmlhttp.open ('get', url);
+		xmlhttp.onreadystatechange = function () { return handleResponseAutoCompleter(xmlhttp, inputID, outputID); };
+		xmlhttp.send (null);
+	}
+	document.getElementById(outputID).style.visibility = 'hidden';
+}
+</script>
 <div id="field"><input id="phrase" onkeyup="sndReqPhrase('phrase', 'suggestion')" maxlength="30" name="phrase" size="35" type="text" /></div>
 <div id="suggestion"></div>
 </div>
 </body>
 </html>
+
