@@ -11,9 +11,8 @@ function createRequestObject() {
 function sndReqPhrase(inputID, outputID) {
 	var phrase = document.getElementById(inputID).value;
 	
-	xmlhttp = createRequestObject();
-	
 	if (phrase.length >= 2) {
+		xmlhttp = createRequestObject();
 		xmlhttp.open ('get', url + phrase);
 		xmlhttp.onreadystatechange = function () { return handleResponseAutoCompleter(xmlhttp, inputID, outputID); };
 		xmlhttp.send (null);
