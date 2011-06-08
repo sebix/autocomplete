@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+	<title>Autocomplete Example via PHP - MySQL</title>
+	<style type"text/css">
+		ul.autocomplete {
+			list-style-type: none;
+			padding: 0 5px;
+			margin: 5px;
+		}
+		
+		#suggestion {
+			background-color: #d7d7d7;
+			float: left;
+			width: 300px;
+			border-radius: 5px 5px 5px 5px;
+			border: 1px solid rgb(136, 136, 136);
+			visibility: hidden;
+		}
+		input {
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+Try MySQL-Commands ;) <br />
+<script src="../autocomplete.js" type="text/javascript"></script>
+<script type="text/javascript">var url = 'mysql.php?phrase=';</script>
+<div id="field"><input id="phrase" onkeyup="sndReqPhrase('phrase', 'suggestion')" maxlength="30" name="phrase" size="35" type="text" /></div>
+<div id="suggestion"></div>
+</div>
+</body>
+</html>
