@@ -8,7 +8,7 @@ if (!preg_match('/^[a-z]*$/i', $phrase))
 	die();
 
 $suggestions = '<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE  Klasse [
+<!DOCTYPE  Autocomplete [
     <!ELEMENT suggestions (suggestion*)>
     <!ELEMENT suggestion (name)>
 ]>

@@ -10,7 +10,7 @@ mysql_select_db('mysql');
 $result = mysql_query('SELECT `name` FROM `help_topic` WHERE `name` LIKE \'' . $phrase . '%\''); // mysql commands
 
 $suggestions = '<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE  Klasse [
+<!DOCTYPE  Autocomplete [
     <!ELEMENT suggestions (suggestion*)>
     <!ELEMENT suggestion (name)>
 ]>
